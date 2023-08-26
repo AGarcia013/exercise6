@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <label for="email">Dirección de Correo</label>
+    <input type="email" id="email" name="email" placeholder="luis@gmail.com">
+    <label for="password">Contraseña</label>
+    <input type="password" id="password" name="password">
+    <label for="nombre completo">Nombre y apellido</label>
+    <input type="text" id="nombre completo" name="nombre completo" placeholder="Luis Fernández">
+    <label for="teléfono">Número de teléfono</label>
+    <input type="tel" id="teléfono" name="número de teléfono" placeholder="+XX 666555444">
+    </br>
+    <select name="dropdown">
+      <option value="Free Plan" selected>Free Plan</option>
+      <option value="10$ Plan">Basic Plan 10</option>
+      <option value="20$ Plan">Better Plan 20</option>
+      <option value="30$ Plan">Best Plan 30</option>
+    </select>
+    <input type="checkbox" name="Pro Plan" value="on">Pro plan
+    <label for="creditcard">Número de tarjeta de crédito</label>
+    <input type="text" id="creditcard" name="tarjeta" pattern="[0-9]*" placeholder="XXXX-XXXX-XXXX-XXXX">
+    <label for="cvc">CvC</label>
+    <input type="text" id="cvc" name="cvc" pattern="[0-9]*" placeholder="XXX">
+    <label for="caducidad">Fecha de Expiración</label>
+    <input type="date" id="caducidad" name="fechaexp"></br>
+    Dirección de facturación:</br>
+    <textarea rows="6" cols="50" name="billingAddress" placeholder="Dirección de Facturación Aquí"></textarea>
+    </br>
+    <button type="submit">Submit</button>
+  </form>
+  </body>
+</html>
